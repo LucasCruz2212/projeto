@@ -60,7 +60,7 @@ while True:
     print(salário)
     
   elif(menu == 4):
-    print(f'A sua lista ficou com {len(nomes)}')
+    print(f'A sua lista ficou com {len(nomes)} nomes')
     print('Você vai calcular o salário de todo mundo: ')
     print('O total ficou: ')
     print(sum(salário))
