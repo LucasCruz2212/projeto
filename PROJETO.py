@@ -64,7 +64,7 @@ while True:
     print('O total ficou: ')
     print(sum(salário))
     média = (sum(salário)/len(nomes))
-    print(f'A média salárial é de {média}')
+    print(f'A média salárial é de {média:.2f}')
     
       
 
