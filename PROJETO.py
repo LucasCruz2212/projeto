@@ -63,6 +63,9 @@ while True:
     print('Você vai calcular o salário de todo mundo: ')
     print('O total ficou: ')
     print(sum(salário))
+    média = (sum(salário)/len(nomes))
+    print(f'A média salárial é de {média}')
+    
       
 
   elif(menu == 5):
