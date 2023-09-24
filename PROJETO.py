@@ -1,11 +1,16 @@
 nomes = []
+
 gênero = []
+
 idade = []
+
 cidade = []
+
 salário = []
 
 while True:
-  print('Faça sua ficha de inscrição: ')
+
+  print('Faça sua lista de funcioários: ')
   menu = int(input('''
   ----MENU----
   1.Adicionar
@@ -27,6 +32,7 @@ while True:
       s = float(input(f'Salário de {n}: '))
       nomes.append(n)
       gv = g[0].upper()
+
       match(gv):
         case "M":
           gênero.append("Masculino")
@@ -34,6 +40,7 @@ while True:
           gênero.append("Feminino")
         case "O":
           gênero.append("Outro gênero")
+
       idade.append(i)
       cidade.append(c)
       salário.append(s)
@@ -54,19 +61,30 @@ while True:
     
   elif(menu == 3):
     print(nomes)
+
     print(gênero)
+
     print(idade)
+
     print(cidade)
+    
     print(salário)
     
   elif(menu == 4):
     print(f'A sua lista ficou com {len(nomes)} nomes')
-    print('Você vai calcular o salário de todo mundo: ')
-    print('O total ficou: ')
-    print(sum(salário))
+
+    print(f'O total dos salários ficou: {sum(salário)}')
+
     média = (sum(salário)/len(nomes))
     print(f'A média salárial é de {média:.2f}')
-    
+
+    masculino = gênero.count('Masculino')
+    feminino = gênero.count('Feminino')
+    Outro = gênero.count('Outro gênero')
+
+    print(f'Sua lista ficou com {masculino} menino(s)')
+    print(f'Sua lista ficou com {feminino} menina(s)')
+    print(f'Sua lista ficou com {Outro} outro(s) gênero(s)')
       
 
   elif(menu == 5):
