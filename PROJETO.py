@@ -40,7 +40,7 @@ while True:
           gênero.append("Feminino")
         case "O":
           gênero.append("Outro gênero")
-
+8
       idade.append(i)
       cidade.append(c)
       salário.append(s)
@@ -71,23 +71,32 @@ while True:
     print(salário)
     
   elif(menu == 4):
-    print(f'A sua lista ficou com {len(nomes)} nomes')
-
-    print(f'O total dos salários ficou: {sum(salário)}')
-
     média = (sum(salário)/len(nomes))
-    print(f'A média salárial é de {média:.2f}')
-
     masculino = gênero.count('Masculino')
     feminino = gênero.count('Feminino')
     Outro = gênero.count('Outro gênero')
+    print(f'''
+    --------------RESULTADO--------------------
+    A sua lista ficou com {len(nomes)} nomes
+    
+    O total dos salário ficou: {sum(salário)}
+    
+    A média de salárial é de {média:.2f}
 
-    print(f'Sua lista ficou com {masculino} menino(s)')
-    print(f'Sua lista ficou com {feminino} menina(s)')
-    print(f'Sua lista ficou com {Outro} outro(s) gênero(s)')
+    Sua lista ficou com {masculino} meninos
+
+    Sua lista ficou com {feminino} meninas
+
+    Sua lista ficou com {Outro} outros gêneros
+    -------------------------------------------
+    ''')
+
+
+    
       
 
   elif(menu == 5):
     break
   else:
     print('Opção invalida')
+
