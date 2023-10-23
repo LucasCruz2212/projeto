@@ -40,7 +40,7 @@ while True:
           gênero.append("Feminino")
         case "O":
           gênero.append("Outro gênero")
-8
+
       idade.append(i)
       cidade.append(c)
       salário.append(s)
